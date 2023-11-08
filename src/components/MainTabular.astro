@@ -1,0 +1,86 @@
+---
+---
+<div class="tabTitle">
+    <ul>
+        <li>
+            <a href="./">00</a>
+        </li>
+        <li>
+            <a href="#">01</a>
+        </li>
+        <li>
+            <a href="#">02</a>
+        </li>
+        <li>
+            <a href="#">03</a>
+        </li>
+        <li>
+            <a href="#">04</a>
+        </li>
+        <li>
+            <a href="#">05</a>
+        </li>
+        <li>
+            <a href="#">06</a>
+        </li>
+        <li>
+            <a href="#">07</a>
+        </li>
+        <li>
+            <a href="#">08</a>
+        </li>
+        <li>
+            <a href="#">09</a>
+        </li>
+    </ul>
+</div>
+<hr />
+<div class="tabContent">
+    <slot />
+</div>
+
+
+<style>
+    ul {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+    .tabTitle, .tabContent {
+		background-color: #23262d;
+		background-image: none;
+		background-size: 400%;
+		border-radius: 7px;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        margin: 10px 0;
+    }
+    .tabTitle {
+        padding: 10px 10px;
+    }
+    .tabContent {
+		padding: 10px 30px;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #888, #aaa, #888);
+    }
+    li {
+        flex: 1;
+        text-align: center;
+    }
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+    li+ li {
+        border-left: 2px solid rgba(255, 255, 255, 0.1);
+    }
+</style>
