@@ -34,9 +34,13 @@
    ```
     git pull origin development
    ```
-   3. 自分の作業するブランチに戻る（例： `feat/navBar` で作業したい）
+   3. ①自分の作業するブランチに戻る（例： `feat/navBar` で作業したい）
    ```
     git switch feat/navBar
+   ```
+   3. ②新しくブランチを作成するときは以下のコマンド(4.のmergeはしなくて良い)
+   ```
+    git switch -c feat/navBar
    ```
    4. 自分の作業ブランチを更新する
    ```
@@ -69,8 +73,13 @@
    [https://github.com/NITACwpl/astro-github-dojo/](https://github.com/NITACwpl/astro-github-dojo/) とか
    2. 「Pull requests」タブに移動します
    3. 緑色の「New pull request」ボタンをクリックします
-   4. プルリクのメッセージとレビュワーを追加して
-
+   4. どのブランチからどのブランチにマージするのかを確認します
+   5. プルリクのdescriptionとreviewersを追加します
+       - reviewersってのは自分のコードを確認してもらう人のこと。つよつよにレビューしてもらいましょう
+   ![howToPullRequest](public/howToPullRequest.png)
+   6. 「Create pull request」をクリックしてプルリクを送ります
+   7. ここを直して～って言われたらもっかい変更→コミット→プッシュをします。
+   8. 無事マージされたら完了！
 
 ## Q&A
 - いつ「コミット」するの？
